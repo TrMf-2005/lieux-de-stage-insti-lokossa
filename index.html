@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stages en entreprise</title>
+  <style>
+    /* ================= HEADER ================= */
+    header {
+      background: rgba(76, 175, 80, 0.8); /* vert transparent */
+      color: white;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    footer {
+  background: rgba(76, 175, 80, 0.8);
+  color: white;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+        .les_logos{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+        }
+        #insti{
+          margin-left: 100%;
+
+        }
+        #unstim{
+          margin-right: 100%;
+        }
+
+    .header-container {
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 28px;
+      font-family: 'Segoe UI', sans-serif;
+      letter-spacing: 1px;
+    }
+    .logo img{
+      display: inline-block;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      display: block;
+      margin-top: 5px;
+      right: 0;
+      background: white;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+      left: 0;
+      background: #FFD700;
+    }
+
+    /* ================= BODY & BACKGROUND ================= */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('interface_1.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 50px 20px;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* ================= BLOCS DEPARTEMENTS ================= */
+    .bloc {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      width: 250px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+
+    .bloc:hover {
+      transform: translateY(-5px);
+    }
+
+    .bloc h2 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .bloc button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .bloc button:hover {
+      background-color: #45a049;
+    }
+  
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 768px) {
+      .bloc {
+        width: 80%;
+      }
+
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+       .logo h1 {
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+        .les_logos{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+        }
+
+    }
+  </style>
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="header-container">
+        <div class="logo">
+          <div class="les_logos">
+            <img id="unstim" class="unstim" src="unstim.png" alt="logo_insti" 
+          style="width: 80px; height: 80px;
+          border-radius: 50px; margin-right: 50%;">
+                      <img id="insti" src="logo_insti.png" alt="logo_insti" 
+          style="width: 80px; height: 80px;
+          border-radius: 50px; margin-left: 60%;">
+          </div>
+          
+        </div>
+        <div class="logo">
+          <h1>
+          <center>
+            Institut National Superieur 
+            De Technologie Industrielle (INSTI) de Lokossa
+          </center> 
+        </h1>
+        </div>
+
+
+
+      </div>
+      <nav>
+        <center>
+          <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="A_propos.html">A propos</a></li>
+        </ul>
+        </center>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= BLOCS DEPARTEMENTS ================= -->
+  <div class="container">
+
+
+
+    <div class="bloc">
+      <h2>Département de Génie Civil</h2>
+      <a href="https://gghjksfghsdjjgyghevbnreyutjergfezoaebaehjfnefhefberyhc-livid.vercel.app/#"><button>Voir les entreprises</button></a>
+    </div>
+    <div class="bloc">
+      <h2>Département de Génie Mécanique et Productique</h2>
+      <a href="https://gmmsdfghqsdfqsdfghjsdoiuytrezaqsdfghjkmlkjnbvcxwsdfghp.vercel.app/#"><button>Voir les entreprises</button></a>
+    </div>
+    <div class="bloc">
+      <h2>Département de Maintenance des Systèmes</h2>
+      <a href="https://msysdfgvbnveqsdfgplknbvcwazertyuivbnfghbdffghjdfghbtau.vercel.app/#"><button>Voir les entreprises</button></a>
+    </div>
+    <div class="bloc">
+      <h2>Département de Génie Energétique</h2>
+      <a href="https://gecvbnsrvdfhgrzfhhfzfgvgaqcvbteacvvxwgfgqcst.vercel.app/#"><button>Voir les entreprises</button></a>
+    </div>
+    <div class="bloc">
+      <h2>Département de Génie Electrique et Informatique</h2>
+      <a href="https://geifcezyhvdfhvsfgehfegrpglerbnaeebagfeaybcqhgfbnseven.vercel.app/"><button>Voir les entreprises</button></a>
+    </div>
+  </div>
+    <footer>
+  <p style="text-align: center; padding: 20px; background: rgba(0,0,0,0.1); margin-top: 50px;">
+    &copy; 2026 INSTI-LOKOSSA. Tous droits réservés.
+  </p>
+  <center>
+    <strong>
+      <em>
+        TWO TF's Codes
+               <div class="profile-icon" 
+    title="Espace administrateur" 
+    onclick="adminLogin()"
+    style="margin-top: 10px;">
+  </div>
+      </em>
+      <em>
+        <strong>
+          Web Art and TWO TF's Codes
+        </strong>
+      </em>
+    </strong>
+  </center>
+   </footer>
+</body>
+</html>
